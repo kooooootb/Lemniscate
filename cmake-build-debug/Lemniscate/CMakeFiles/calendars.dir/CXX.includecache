@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/zavgm/2Labs/lab2/lemniscate/Lemniscate.cpp
+strstream
+-
+cstring
+-
+iostream
+-
+Lemniscate.h
+C:/Users/zavgm/2Labs/lab2/lemniscate/Lemniscate.h
+
+C:/Users/zavgm/2Labs/lab2/lemniscate/Lemniscate.h
+cmath
+-
+
