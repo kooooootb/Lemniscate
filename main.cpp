@@ -53,7 +53,7 @@ int main() {
 
         std::cout << "Lemniscate's area = " << l.area() << std::endl;
 
-        std::cout << "Enter new c to continue or Ctrl-D to exit:";
+        std::cout << "Enter new c to continue or EOF to exit:";
         if (getNum(c) > 0)
             l.setC(c);
         else
