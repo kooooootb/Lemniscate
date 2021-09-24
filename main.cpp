@@ -11,7 +11,7 @@ int main() {
 
     Prog2::Lemniscate l(c);
 
-    int fl1 = 1;
+    bool fl1 = true;
 
     while (fl1) {
         std::cout << "Enter angle to calculate dot's distance to center:";
@@ -57,7 +57,7 @@ int main() {
         if (getNum(c) > 0)
             l.setC(c);
         else
-            fl1 = 0;
+            fl1 = false;
     }
 
     return 0;

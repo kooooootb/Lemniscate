@@ -32,7 +32,7 @@ namespace Prog2{
         if(dist <= 0 || dist > (c * sqrt(2)))
             throw std::invalid_argument("invalid distance");
 
-        return (2 * c * c / (3 * dist));
+        return (2 * pow(c, 2) / (3 * dist));
     }
 
     double Lemniscate::areaSegm(double angle) const{//площадь сегмента в зависимости от угла
@@ -40,15 +40,15 @@ namespace Prog2{
             throw std::invalid_argument("invalid angle");
 
         if(angle >= 0 && angle < PI/4){
-            return (c * c * sin(2 * angle) / 2);
+            return (pow(c, 2) * sin(2 * angle) / 2);
         }else if(angle >= PI/4 && angle <= 3*PI/4){
-            return (c * c / 2);
+            return (pow(c, 2) / 2);
         }else if(angle > 3*PI/4 && angle <= PI){
-            return ((c * c) - (c * c * sin(2 * (PI - angle)) / 2));
+            return ((pow(c, 2)) - (pow(c, 2) * sin(2 * (PI - angle)) / 2));
         }else if(angle > PI && angle < 5*PI/4){
-            return ((c * c) + (c * c * sin(2 * (angle - PI)) / 2));
+            return ((pow(c, 2)) + (pow(c, 2) * sin(2 * (angle - PI)) / 2));
         }else if(angle >= 5*PI/4 && angle <= 7*PI/4){
-            return (c * c * 3 / 2);
-        }else return ((c * c * 3 / 2) + (c * c * sin(2 * (2 * PI - angle)) / 2));
+            return (pow(c, 2) * 3 / 2);
+        }else return ((pow(c, 2) * 3 / 2) + (pow(c, 2) * sin(2 * (2 * PI - angle)) / 2));
     }
 }
