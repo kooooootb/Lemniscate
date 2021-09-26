@@ -15,7 +15,7 @@ int getNum(T &a) {
             return -1;
         std::cout << "Error, repeat:";
         std::cin.clear();
-        std::cin.ignore();
+        std::cin.ignore(std::numeric_limits<int>::max(), '\n');
     }
     return 1;
 }
